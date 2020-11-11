@@ -1,0 +1,46 @@
+
+.flex-container {
+    display:flex;
+    width: 90%;
+    height: 20rem;
+    border: solid 1px rebeccapurple;
+    margin: 10px 0;
+    padding: 20px;
+}
+.flex-box {
+width: 200px;
+height: 200px;
+border: 2px solid blue;
+box-sizing: border-box;
+
+}
+.flex-box.box4,.box7 {
+ flex-basis: content;
+ 
+}
+
+.flex-container div:nth-of-type(1),:nth-of-type(5),:nth-of-type(6){
+    background-color: tomato;
+}
+
+.flex-box.box1,.box5 {
+    flex-shrink: 2;
+}
+/* Optional  */
+
+
+.minisquare {
+    width: 18px;
+    height: 18px;
+    box-sizing: border-box;
+    border:solid 1px black ;
+}
+
+
+.box2,.box7 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    align-items: center;
+    flex-flow: column-reverse;
+}
